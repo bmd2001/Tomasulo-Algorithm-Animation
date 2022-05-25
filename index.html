@@ -9,9 +9,204 @@
 </head>
 <body>
 
-    <object data = "Tomasulo.svg"></object>
+    <h1>Tomasulo Algorithm Animation by Davide Bressani</h1>
 
-    <script src="app/js/main.js"></script>
+    <nav><a href="#">Home</a><a href="">History</a></nav>
+
+    <p>
+        Welcome on my webpage, where you'll be able to see how Tomasulo's algorithm actually works. 
+        This animation is highly inspired by <a href="https://www.youtube.com/watch?v=zS9ngvUQPNM">J.R. youtube video</a>, where he explains every passage.
+    </p>
+
+    <p>
+        Below you will find a form that you can fill in with the Instructions and the number of clock cycles needed for executing them. 
+        When you have added everything, you can press the start button to start the animation.
+        You will also be able to choose if you want to run it all or step through it.
+    </p>
+
+    <table>
+        <form action="">
+            <tr>
+                <td><label for="instr1">Instruction 1: </label></td>
+                <td>
+                    <select name="instr1" id="instr sel" onchange="hide(this)">
+                        <option value="" disabled>None</option>
+                        <option value="LW"selected>LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr1" id=""></select></td>
+                <td><select name="instr1" id=""></select></td>
+                <td><select name="instr1" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr2">Instruction 2: </label></td>
+                <td>
+                    <select name="instr2" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr2" id=""></select></td>
+                <td><select name="instr2" id=""></select></td>
+                <td><select name="instr2" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr3">Instruction 3: </label></td>
+                <td>
+                    <select name="instr3" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr3" id=""></select></td>
+                <td><select name="instr3" id=""></select></td>
+                <td><select name="instr3" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr4">Instruction 4: </label></td>
+                <td>
+                    <select name="instr4" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr4" id=""></select></td>
+                <td><select name="instr4" id=""></select></td>
+                <td><select name="instr4" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr5">Instruction 5: </label></td>
+                <td>
+                    <select name="instr5" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr5" id=""></select></td>
+                <td><select name="instr5" id=""></select></td>
+                <td><select name="instr5" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr6">Instruction 6: </label></td>
+                <td>
+                    <select name="instr6" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr6" id=""></select></td>
+                <td><select name="instr6" id=""></select></td>                
+                <td><select name="instr6" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr7">Instruction 7: </label></td>
+                <td>
+                    <select name="instr7" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr7" id=""></select></td>
+                <td><select name="instr7" id=""></select></td>
+                <td><select name="instr7" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr8">Instruction 8: </label></td>
+                <td>
+                    <select name="instr8" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr8" id=""></select></td>
+                <td><select name="instr8" id=""></select></td>
+                <td><select name="instr8" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr9">Instruction 9: </label></td>
+                <td>
+                    <select name="instr9" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr9" id=""></select></td>
+                <td><select name="instr9" id=""></select></td>
+                <td><select name="instr9" id=""></select></td>
+            </tr>
+            <tr>
+                <td><label for="instr10">Instruction 10: </label></td>
+                <td>
+                    <select name="instr10" id="instr sel" onchange="hide(this)">
+                        <option value="none"  selected >None</option>
+                        <option value="LW">LW</option>
+                        <option value="SW">SW</option>
+                        <option value="ADD">ADD</option>
+                        <option value="SUB">SUB</option>
+                        <option value="MUL">MUL</option>
+                        <option value="DIV">DIV</option>
+                    </select>
+                </td>
+                <td><select name="instr10" id=""></select></td>
+                <td><select name="instr10" id=""></select></td>
+                <td><select name="instr10" id=""></select></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+
+
+    <script src="app/js/home.js"></script>
     
 </body>
 </html>
