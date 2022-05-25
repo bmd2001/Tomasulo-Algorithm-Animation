@@ -1,0 +1,25 @@
+html {
+  font-size: 100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+object[data="Tomasulo.svg"] {
+  width: 50%;
+  height: 50%;
+}
+/*# sourceMappingURL=style.css.map */
