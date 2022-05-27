@@ -29,7 +29,7 @@
             <tr>
                 <td><label for="instr1">Instruction 1: </label></td>
                 <td>
-                    <select name="instr1" id="instr sel" onchange="hide(this)">
+                    <select name="instr1" id="L" onchange="hide(this); changeRegs(this);" >
                         <option value="" disabled>None</option>
                         <option value="LW"selected>LW</option>
                         <option value="SW">SW</option>
@@ -39,14 +39,65 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr1" id=""></select></td>
-                <td><select name="instr1" id=""></select></td>
-                <td><select name="instr1" id=""></select></td>
+                <td>
+                    <select name="instr1" id="">
+                        <option value="" hidden></option>
+                        <option value="F1" selected>F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr1" id="">
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr1" id="">
+                        <option value="" hidden></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3" selected>F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr2">Instruction 2: </label></td>
                 <td>
-                    <select name="instr2" id="instr sel" onchange="hide(this)">
+                    <select name="instr2" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -56,14 +107,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr2" id=""></select></td>
-                <td><select name="instr2" id=""></select></td>
-                <td><select name="instr2" id=""></select></td>
+                <td>
+                    <select name="instr2" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr2" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr2" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr3">Instruction 3: </label></td>
                 <td>
-                    <select name="instr3" id="instr sel" onchange="hide(this)">
+                    <select name="instr3" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -73,14 +176,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr3" id=""></select></td>
-                <td><select name="instr3" id=""></select></td>
-                <td><select name="instr3" id=""></select></td>
+                <td>
+                    <select name="instr3" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr3" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr3" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr4">Instruction 4: </label></td>
                 <td>
-                    <select name="instr4" id="instr sel" onchange="hide(this)">
+                    <select name="instr4" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -90,14 +245,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr4" id=""></select></td>
-                <td><select name="instr4" id=""></select></td>
-                <td><select name="instr4" id=""></select></td>
+                <td>
+                    <select name="instr4" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr4" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr4" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr5">Instruction 5: </label></td>
                 <td>
-                    <select name="instr5" id="instr sel" onchange="hide(this)">
+                    <select name="instr5" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -107,14 +314,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr5" id=""></select></td>
-                <td><select name="instr5" id=""></select></td>
-                <td><select name="instr5" id=""></select></td>
+                <td>
+                    <select name="instr5" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr5" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr5" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr6">Instruction 6: </label></td>
                 <td>
-                    <select name="instr6" id="instr sel" onchange="hide(this)">
+                    <select name="instr6" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -124,14 +383,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr6" id=""></select></td>
-                <td><select name="instr6" id=""></select></td>                
-                <td><select name="instr6" id=""></select></td>
+                <td>
+                    <select name="instr6" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr6" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>                
+                <td>
+                    <select name="instr6" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr7">Instruction 7: </label></td>
                 <td>
-                    <select name="instr7" id="instr sel" onchange="hide(this)">
+                    <select name="instr7" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -141,14 +452,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr7" id=""></select></td>
-                <td><select name="instr7" id=""></select></td>
-                <td><select name="instr7" id=""></select></td>
+                <td>
+                    <select name="instr7" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr7" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr7" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr8">Instruction 8: </label></td>
                 <td>
-                    <select name="instr8" id="instr sel" onchange="hide(this)">
+                    <select name="instr8" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -158,14 +521,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr8" id=""></select></td>
-                <td><select name="instr8" id=""></select></td>
-                <td><select name="instr8" id=""></select></td>
+                <td>
+                    <select name="instr8" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr8" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr8" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr9">Instruction 9: </label></td>
                 <td>
-                    <select name="instr9" id="instr sel" onchange="hide(this)">
+                    <select name="instr9" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -175,14 +590,66 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr9" id=""></select></td>
-                <td><select name="instr9" id=""></select></td>
-                <td><select name="instr9" id=""></select></td>
+                <td>
+                    <select name="instr9" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr9" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="instr9" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="instr10">Instruction 10: </label></td>
                 <td>
-                    <select name="instr10" id="instr sel" onchange="hide(this)">
+                    <select name="instr10" id="none" onchange="hide(this); changeRegs(this);" >
                         <option value="none"  selected >None</option>
                         <option value="LW">LW</option>
                         <option value="SW">SW</option>
@@ -192,9 +659,63 @@
                         <option value="DIV">DIV</option>
                     </select>
                 </td>
-                <td><select name="instr10" id=""></select></td>
-                <td><select name="instr10" id=""></select></td>
-                <td><select name="instr10" id=""></select></td>
+                <td>
+                    <select name="instr10" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+           
+                <td>
+                    <select name="instr10" id="">
+                        <option value="" selected></option>
+                        <option value="R1">R1</option>
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                        <option value="R4">R4</option>
+                        <option value="R5">R5</option>
+                        <option value="R6">R6</option>
+                        <option value="R7">R7</option>
+                        <option value="R8">R8</option>
+                        <option value="R9">R9</option>
+                        <option value="R10">R10</option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
+           
+                <td>
+                    <select name="instr10" id="">
+                        <option value="" selected></option>
+                        <option value="F1">F1</option>
+                        <option value="F2">F2</option>
+                        <option value="F3">F3</option>
+                        <option value="F4">F4</option>
+                        <option value="F5">F5</option>
+                        <option value="F6">F6</option>
+                        <option value="F7">F7</option>
+                        <option value="F8">F8</option>
+                        <option value="F9">F9</option>
+                        <option value="F10">F10</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>
