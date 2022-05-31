@@ -3,6 +3,7 @@ const form  = document.getElementById('regSel');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(form);
+    window.location.href="html/animation.html";
 })
 
 class FormData{
