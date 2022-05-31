@@ -21,7 +21,6 @@ function changeRegs(eSelect){
     var tr = eSelect.parentElement.parentElement;
     var tds = tr.children;
     const loads = ["LW", "SW"];
-    console.log(eSelect.id);
     if(eSelect.options[eSelect.selectedIndex].value === "none"){
         selectNone(tds);
     }
@@ -52,7 +51,6 @@ function selectLw(tds){
     tds = Array.from(tds);
     var $options = Array.from(tds[3].children[0].options);
     tds[2].children[0].options[1].selected = true;
-    console.log($options.length);
     for(let i = 0; i< $options.length; i++){
         var option = $options[i];
         if(option.value.includes('F') | option.value === ""){
