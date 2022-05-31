@@ -25,7 +25,7 @@
     </p>
 
     <table>
-        <form action="">
+        <form id="regSel">
             <tr>
                 <td><label for="instr1">Instruction 1: </label></td>
                 <td>
@@ -719,6 +719,22 @@
             </tr>
             <tr>
                 <td>
+                    <label for="intCycles">Integer:</label>
+                    <input type="number" name="intCycles" min="1" max="50" value="1">
+                    <label for="addCycles">FP ADD:</label>
+                    <input type="number" name="addCycles" min="1" max="50" value="2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mulCycles">FP MUL:</label>
+                    <input type="number" name="mulCycles" min="1" max="50" value="10">
+                    <label for="divCycles">FP DIV:</label>
+                    <input type="number" name="divCycles" min="1" max="50" value="40">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <input type="submit">
                 </td>
             </tr>
@@ -728,6 +744,7 @@
 
 
     <script src="app/js/home.js"></script>
+    <script src="app/js/formSubmit.js"></script>
     
 </body>
 </html>
